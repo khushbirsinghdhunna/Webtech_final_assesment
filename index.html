@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Pandey - Webtech Portfolio</title>
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* Deep, modern gradient background to make the frost effect pop */
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #4a1c40);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        /* The Main Glass Container */
+        .glass-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px); /* The Frost Effect */
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 1000px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255,255,255,0.3);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        /* Section Styling */
+        .category {
+            margin-bottom: 30px;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #4db6ac; /* Accent color for titles */
+        }
+
+        /* Grid Layout for Buttons */
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 15px;
+        }
+
+        /* Glass Buttons */
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.9rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Different Colors for Categories on Hover */
+        .js-group .btn:hover {
+            background: rgba(247, 223, 30, 0.2); /* Yellowish for JS */
+            border-color: rgba(247, 223, 30, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(247, 223, 30, 0.2);
+        }
+
+        .css-group .btn:hover {
+            background: rgba(41, 101, 241, 0.2); /* Blueish for CSS */
+            border-color: rgba(41, 101, 241, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(41, 101, 241, 0.2);
+        }
+
+        .html-group .btn:hover {
+            background: rgba(227, 76, 38, 0.2); /* Reddish for HTML */
+            border-color: rgba(227, 76, 38, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(227, 76, 38, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 0.9rem; }
+            .glass-container { padding: 20px; }
+            .btn-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-container">
+        <header>
+            <h1>Mohit Pandey</h1>
+            <h2>Webtech Practical Questions</h2>
+        </header>
+
+        <div class="category js-group">
+            <h3 class="category-title">JavaScript Logic (1 - 15)</h3>
+            <div class="btn-grid">
+                <a href="question1.html" class="btn">Q 1</a>
+                <a href="question2.html" class="btn">Q 2</a>
+                <a href="question3.html" class="btn">Q 3</a>
+                <a href="question4.html" class="btn">Q 4</a>
+                <a href="question5.html" class="btn">Q 5</a>
+                <a href="question6.html" class="btn">Q 6</a>
+                <a href="question7.html" class="btn">Q 7</a>
+                <a href="question8.html" class="btn">Q 8</a>
+                <a href="question9.html" class="btn">Q 9</a>
+                <a href="question10.html" class="btn">Q 10</a>
+                <a href="question11.html" class="btn">Q 11</a>
+                <a href="question12.html" class="btn">Q 12</a>
+                <a href="question13.html" class="btn">Q 13</a>
+                <a href="question14.html" class="btn">Q 14</a>
+                <a href="question15.html" class="btn">Q 15</a>
+            </div>
+        </div>
+
+        <div class="category css-group">
+            <h3 class="category-title">CSS & Styling (16 - 20)</h3>
+            <div class="btn-grid">
+                <a href="question16.html" class="btn">Q 16</a>
+                <a href="question17.html" class="btn">Q 17</a>
+                <a href="question18.html" class="btn">Q 18</a>
+                <a href="question19.html" class="btn">Q 19</a>
+                <a href="question20.html" class="btn">Q 20</a>
+            </div>
+        </div>
+
+        <div class="category html-group">
+            <h3 class="category-title">HTML Components (21 - 25)</h3>
+            <div class="btn-grid">
+                <a href="question21.html" class="btn">Q 21</a>
+                <a href="question22.html" class="btn">Q 22</a>
+                <a href="question23.html" class="btn">Q 23</a>
+                <a href="question24.html" class="btn">Q 24</a>
+                <a href="question25.html" class="btn">Q 25</a>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2025 Webtech Practical Submission
+        </footer>
+    </div>
+
+</body>
+</html>
